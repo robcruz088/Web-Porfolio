@@ -16,4 +16,5 @@ def basics2b():
     return render_template("basics2b.html")
 
 if __name__=='__main__':
-    app.run()
+    # for AWS deployment
+    app.run(host= '0.0.0.0', port='80')
