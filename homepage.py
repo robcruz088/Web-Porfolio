@@ -1,10 +1,10 @@
 from flask import Flask, redirect, url_for, render_template
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='', static_folder='templates/static', template_folder='templates')
 
 
 @app.route('/')
-def homepage(name=None):
+def homepage():
     return render_template("homepage.html")
 
 @app.route('/roberto/')
