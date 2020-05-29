@@ -23,6 +23,8 @@ header::after {
     clear: both;
 }
 
+/* #### Navbar Section Starts Here #### */
+
 .logo{
     float: left;
     padding: 10px 20px;
@@ -43,6 +45,8 @@ nav li {
     margin: 0 25px 25px;
     padding-top: 75px;
 
+    position: relative;
+
 }
 
 nav a{
@@ -54,4 +58,22 @@ nav a{
 
 nav a:hover{
     color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%
+
+    /*transition: background-color ease-in-out 250ms; */
+}
+
+nav a:hover::before {
+    width: 100%
 }
