@@ -23,7 +23,7 @@ header::after {
     clear: both;
 }
 
-/* #### Navbar Section Starts Here #### */
+/* #### NAVBAR STARTS HERE #### */
 
 .logo{
     float: left;
@@ -77,3 +77,5 @@ nav a::before {
 nav a:hover::before {
     width: 100%
 }
+
+/* #### NAVBAR ENDS HERE */
