@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Portfolios</title>
-</head>
-<body>
+	<head>
+        <!--- Meta tags --->
+		<meta charset = "utf-8" />
+		<meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta name = "author" content = "Roberto Cruz" />
+        <meta name = "description" content = "A variety of Web Portfolios" />
 
-</body>
+        <!--- Title --->
+        <title>The Portfolios</title>
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	</head>
+
+    <body>
+
+    <header>
+        <div class="container">
+            <img src="assets/logo.png" alt="logo" class="logo">
+
+            <nav>
+                <!-- Nav Tag -->
+                <ul>
+                    <!-- Unlinked List for the Navbar links-->
+                    <li><a href="{{ url_for('homePage') }}">Home</a></li>
+                    <li><a href="{{ url_for('portfolios') }}">Portfolios</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('contactUs') }}">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    </body>
+
+
 </html>
