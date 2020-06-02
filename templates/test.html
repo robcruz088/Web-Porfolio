@@ -17,18 +17,11 @@
 
     <!-- Header for the Navbar -->
     <header>
-        <div class="container">
-            <img src="{{ url_for('static',filename='assets/logo.png') }}", alt="logo" class="logo" >
-            <nav>
-                <!-- Nav Tag for Nav Bar -->
-                <ul>
-                    <!-- Unlinked List for the Navbar links-->
-                    <li><a href="{{ url_for('homePage') }}">Home</a></li>
-                    <li><a href="{{ url_for('portfolios') }}">Portfolios</a></li>
-                    <li><a href="{{ url_for('about') }}">About</a></li>
-                    <li><a href="{{ url_for('contactUs') }}">Contact Us</a></li>
-                </ul>
-            </nav>
+        <div class="navbar">
+            <a class="nav-link nav-link-ltr" href="#">Home</a>
+            <a class="nav-link nav-link-ltr" href="#">About</a>
+            <a class="nav-link nav-link-ltr" href="#">Contact</a>
+            <a class="nav-link nav-link-ltr" href="#">Blog</a>
         </div>
     </header>
 

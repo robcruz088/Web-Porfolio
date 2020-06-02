@@ -19,49 +19,50 @@ body {
     margin: 0 auto;
 }
 
-/* header {
-    background: #262626;
-
-}
-
-header::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-*/
-
-/* #### NAVBAR STARTS HERE #### */
-
-/*.logo{
-    float: left;
-    padding: 10px 20px;
-}
-*/
+/*##############################*/
+/*##### NAVBAR STARTS HERE #####*/
+/*##############################*/
 
 nav {
-    /*float: right; */
     width: 100%;
     margin: 0 auto;
     background: #262626;
     padding: 5px 0;
     box-shadow: 0px 5px 0px #dedede;
+    display: inline-block;
+    position: relative;
+    opacity; 0.75;
+}
+
+nav {
+    border-bottom: 1px solid #bbbbbb;
+}
+
+nav:hover{
+    opacity: 1;
+}
+
+nav.under a:hover{
+    color: #00ccff;;
+    z-index: 1;
+}
+
+nav.under a::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #cccccc;
 }
 
 nav ul {
-    /*margin: 0;
-    padding: 0; */
     text-align: center;
     list-style: none;
 }
 
+
 nav ul li {
     display: inline-block;
-    /*margin: 0 25px 25px;
-    padding-top: 75px;
-
-    position: relative; */
-
 }
 
 nav ul li a{
@@ -70,67 +71,22 @@ nav ul li a{
     text-decoration: none;
     color: #f2f2f2;
     margin: 0 10px;
-
 }
 
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
+nav.under ul li a{
     transition: all .5s;
-
 }
 
-nav ul li a:hover{
-    color: #00ccff;
-}
-
-nav.fill ul li a:after{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+nav.under ul li a::before{
     width: 0%;
-    content: '.';
-    background: #aaa;
-    height: 1px;
-}
-nav.fill ul li a{
-    transition: all 2s;
+    bottom: 10px;
 }
 
-
-/*
-nav a{
-    color: #f2f2f2;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
+nav.under ul li a:hover::before{
+    width: 4%;
 }
 
-nav a:hover{
-    color: #00ccff;
-}
-
-nav a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    width: 100%;
-    background-color: #cccccc;
-
-    position: absolute;
-    top: 0;
-    width: 0%
-
-    /* transition: background-color ease-in-out 250ms;
-}
-
-nav a:hover::before {
-    width: 100%
-}
-
-*/
-
-/* #### NAVBAR ENDS HERE */
+/*##############################*/
+/*###### NAVBAR ENDS HERE ######*/
+/*##############################*/
 

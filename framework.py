@@ -27,6 +27,10 @@ def about():
 def contactUs():
     return render_template('contactus.html')
 
+@app.route('/test/')
+def test():
+    return render_template('test.html')
+
 
 if __name__ == '__main__':
     # for when it needs to be deployed on AWS webservice
