@@ -145,6 +145,19 @@ header.masthead .mastheadUpper{
 
 /*#### Top Button #### */
 
+.topButton .top{
+    position: fixed;
+    max-width: 30px;
+    max-height: 30px;
+    width: auto;
+    height:auto;
+    background-color: #ffffff00;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
 
 
 

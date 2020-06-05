@@ -12,11 +12,12 @@
         <link rel="stylesheet" href=" {{ url_for('static',filename='styles/style.css') }} ">
 <!--        <link rel="stylesheet" href="static/styles/style.css">-->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 	</head>
 
     <body>
         <div class="nav">
-            <nav class="under" id="home">
+            <nav class="under">
                 <!-- Nav Tag for Nav Bar -->
                 <ul>
                     <!-- Unlinked List for the Navbar links-->
@@ -49,11 +50,15 @@
         <h2>Section2</h2>
         <a href="#section1">Click to section 1</a>
     </div>
-    <div>
-        <a href="#home">
-            <img src="{{ url_for('static',filename='assets/uparrow.png') }}", alt="logo" class="logo">
-        </a>
+
+
+    <div class="topButton">
+        <button onclick="topFunction()"><img class="top" src="{{ url_for('static',filename='assets/uparrow.png') }}"></button>
+        <!--<a href="#">
+            <img class="top" id="topButton" src="{{ url_for('static',filename='assets/uparrow.png') }}">
+        </a>-->
     </div>
+
 
 
     </body>
