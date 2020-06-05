@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background: #ffffff;
@@ -14,10 +18,6 @@ body {
     font-weight: 300;
 }
 
-.container{
-    width: 80%
-    margin: 0 auto;
-}
 
 /*##############################*/
 /*##### NAVBAR STARTS HERE #####*/
@@ -43,7 +43,7 @@ nav:hover{
 }
 
 nav.under a:hover{
-    color: #00ccff;;
+    color: #00ccff;
     z-index: 1;
 }
 
@@ -89,4 +89,65 @@ nav.under ul li a:hover::before{
 /*##############################*/
 /*###### NAVBAR ENDS HERE ######*/
 /*##############################*/
+
+/*-----------------------------*/
+
+/*###### Masthead ######*/
+
+header.masthead{
+    padding-top: 7.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+}
+
+header.masthead .mastheadSub{
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+}
+
+header.masthead .mastheadUpper{
+    font-size: 3.25rem;
+    font-weight: 300;
+    line-height: 3.25rem;
+    margin-bottom: 2rem;
+}
+
+.tellButton{
+    text-decoration: none;
+    background-color: #00ccff;
+    color: #ffffff;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+    opacity: .6;
+    transition: .3s;
+}
+
+.tellButton:hover{
+    opacity: 1;
+}
+
+.masthead .tellButton{
+}
+
+#section1{
+    height: 600px;
+    background-color: pink;
+}
+
+#section2{
+    height: 500px;
+    background-color: yellow;
+}
+
+
+
+
+
+
+
+
 
