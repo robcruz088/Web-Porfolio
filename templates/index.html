@@ -16,7 +16,7 @@
 
     <body>
         <div class="nav">
-            <nav class="under">
+            <nav class="under" id="home">
                 <!-- Nav Tag for Nav Bar -->
                 <ul>
                     <!-- Unlinked List for the Navbar links-->
@@ -49,7 +49,11 @@
         <h2>Section2</h2>
         <a href="#section1">Click to section 1</a>
     </div>
-
+    <div>
+        <a href="#home">
+            <img src="{{ url_for('static',filename='assets/uparrow.png') }}", alt="logo" class="logo">
+        </a>
+    </div>
 
 
     </body>
