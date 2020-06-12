@@ -12,18 +12,19 @@
         <link rel="stylesheet" href=" {{ url_for('static',filename='styles/style.css') }} ">
 <!--        <link rel="stylesheet" href="static/styles/style.css">-->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+<!--        <script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}"></script>-->
 	</head>
 
     <body>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}"></script>
         <div class="nav">
             <nav class="under">
                 <!-- Nav Tag for Nav Bar -->
                 <ul>
                     <!-- Unlinked List for the Navbar links-->
                     <li><a href="{{ url_for('homePage') }}">Home</a></li>
-                    <li><a href="{{ url_for('portfolios') }}">Portfolios</a></li>
-                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="#portfolio">Portfolios</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="{{ url_for('contactUs') }}">Contact Us</a></li>
 <!--                    <li><a href="{{ url_for('test') }}">test</a></li>-->
                 </ul>
@@ -35,29 +36,59 @@
             <div class="container">
                 <div class="mastheadSub">Welcome To Our Portfolios</div>
                 <div class="mastheadUpper">It's Nice To Meet You</div>
-                <a class="tellButton" href="#section1">Tell Me More</a>
+                <a class="tellButton" href="#portfolio">View Portfolios</a>
             </div>
         </header>
 
-    <h1>Smooth test</h1>
-    <div class="main" id="section1">
-        <h2>Portfolio</h2>
-        <p>Various Dev Portfolio</p>
-        <a href="#section2">Click to Smooth Scroll to Section 2</a>
+    <div class="main" id="portfolio">
+        <h1>Portfolios</h1>
+        <h3>Various Dev Portfolio</h3>
+        <!-- 4 Portfolio Area -->
+        <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="team-member">
+                            <a href="#"><img class="mx-auto rounded-circle" src="{{ url_for('static',filename='assets/professor.png') }}" alt="" /></a>
+                            <h4>Roberto Cruz Estrella</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="team-member">
+                            <a href="#"><img class="mx-auto rounded-circle" src="{{ url_for('static',filename='assets/doctor.png') }}" alt="" /></a>
+                            <h4>Argenis Reyes</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <div class="team-member">
+                            <a href="#"><img class="mx-auto rounded-circle" src="{{ url_for('static',filename='assets/lightning.png') }}" alt="" /></a>
+                            <h4>Johanna Jerez Garcia</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="team-member">
+                            <a href="#"><img class="mx-auto rounded-circle" src="{{ url_for('static',filename='assets/spideyboy.png') }}" alt="" /></a>
+                            <h4>Christian Martinez</h4>
+                        </div>
+                    </div>
+        </div>
+
     </div>
 
-    <div class="main" id="section2">
+
+    <!-- The About Section -->
+    <div class="main" id="about">
         <h2>Section2</h2>
         <a href="#section1">Click to section 1</a>
     </div>
 
 
-    <div class="topButton">
-        <button onclick="topFunction()"><img class="top" src="{{ url_for('static',filename='assets/uparrow.png') }}"></button>
-        <!--<a href="#">
-            <img class="top" id="topButton" src="{{ url_for('static',filename='assets/uparrow.png') }}">
-        </a>-->
+
+
+    <!-- Scroll to top Button -->
+
+    <div id="topButton">
+        <a href="#"><img class="top" src="{{ url_for('static',filename='assets/uparrow.png') }}"></a>
     </div>
+
 
 
 

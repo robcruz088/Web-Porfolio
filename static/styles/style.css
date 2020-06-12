@@ -98,6 +98,7 @@ header.masthead{
     padding-top: 7.5rem;
     padding-bottom: 6rem;
     text-align: center;
+    height: 300px;
 }
 
 header.masthead .mastheadSub{
@@ -133,31 +134,92 @@ header.masthead .mastheadUpper{
 .masthead .tellButton{
 }
 
-#section1{
-    height: 600px;
-    background-color: pink;
+
+#portfolio{
+    height: 850px;
+    background-color: #ffffff;
 }
 
-#section2{
+#portfolio h1{
+    text-align: center;
+    top: 1.5rem;
+}
+
+#portfolio h3{
+    text-align: center;
+}
+
+
+#about{
     height: 500px;
     background-color: yellow;
 }
 
 /*#### Top Button #### */
 
-.topButton .top{
+#topButton .top{
     position: fixed;
     max-width: 30px;
     max-height: 30px;
     width: auto;
     height:auto;
     background-color: #ffffff00;
-    bottom: 40px;
-    right: 50px;
+    bottom: 30px;
+    right: 40px;
     text-decoration: none;
     text-align: center;
     line-height: 50px;
 }
 
+/*#### Top Button End ####*/
 
+/*#### Four Porfolio Grid Start ####*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+}
 
+@media (min-width: 600px) {
+    .col-lg-4 {
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .mb-lg-0{
+        margin-bottom: 0 !important;
+    }
+}
+
+.team-member {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.team-member img{
+  width: 14rem;
+  height: 14rem;
+  border: 0.5rem solid #bbbbbb;
+
+}
+.team-member h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.mx-auto {
+  margin-right: auto !important;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.mb-4{
+  margin-bottom: 1.5rem !important;
+}
+
+/*#### Four Porfolio Grid End ####*/
