@@ -18,6 +18,7 @@ body {
     font-weight: 300;
 }
 
+/*----------------------------------------*/
 
 /*##############################*/
 /*##### NAVBAR STARTS HERE #####*/
@@ -90,7 +91,7 @@ nav.under ul li a:hover::before{
 /*###### NAVBAR ENDS HERE ######*/
 /*##############################*/
 
-/*-----------------------------*/
+/*----------------------------------------*/
 
 /*###### Masthead ######*/
 
@@ -149,11 +150,7 @@ header.masthead .mastheadUpper{
     text-align: center;
 }
 
-
-#about{
-    height: 500px;
-    background-color: yellow;
-}
+/*----------------------------------------*/
 
 /*#### Top Button #### */
 
@@ -172,6 +169,8 @@ header.masthead .mastheadUpper{
 }
 
 /*#### Top Button End ####*/
+
+/*----------------------------------------*/
 
 /*#### Four Porfolio Grid Start ####*/
 .row {
@@ -223,3 +222,27 @@ header.masthead .mastheadUpper{
 }
 
 /*#### Four Porfolio Grid End ####*/
+
+/*----------------------------------------*/
+
+/*#### About Us Start ####*/
+
+#about{
+    height: 600px;
+    background-color: white;
+}
+
+
+/*#### About Us End ####*/
+
+/*----------------------------------------*/
+
+/*#### Contact Us Start ####*/
+
+#contactUs{
+    height: 600px;
+    background-color: #262626;
+    color: white;
+}
+
+/*#### Contact Us End ####*/
